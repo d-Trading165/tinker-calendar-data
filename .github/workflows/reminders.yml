@@ -32,5 +32,8 @@ jobs:
           git config user.name "tinker-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add registry.json
-          git diff --cached --quiet || git commit -m "update reminder registry"
-          git push
+          if ! git diff --cached --quiet; then
+            git commit -m "update reminder registry"
+            git pull --rebase origin main
+            git push
+          fi

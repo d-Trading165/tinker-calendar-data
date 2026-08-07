@@ -1,0 +1,129 @@
+{
+  "board": "My Board",
+  "groups": [
+    {
+      "id": "0ccbabdc",
+      "name": "This Week",
+      "color": "#579bfc",
+      "collapsed": false
+    },
+    {
+      "id": "526d5c1f",
+      "name": "Next Week",
+      "color": "#a25ddc",
+      "collapsed": false
+    }
+  ],
+  "items": [
+    {
+      "id": "d9ee6295",
+      "group": "0ccbabdc",
+      "name": "Compliance & board meeting",
+      "status": "Done",
+      "date": "2026-07-27",
+      "time": "09:30",
+      "tag": "regis",
+      "priority": "Medium",
+      "owner": "",
+      "notes": ""
+    },
+    {
+      "id": "402eada4",
+      "group": "0ccbabdc",
+      "name": "Evacheck",
+      "status": "Done",
+      "date": "2026-07-28",
+      "time": "09:30",
+      "tag": "regis",
+      "priority": "Medium",
+      "owner": "",
+      "notes": ""
+    },
+    {
+      "id": "094984eb",
+      "group": "0ccbabdc",
+      "name": "Website & command deck",
+      "status": "Working on it",
+      "date": "2026-07-29",
+      "time": "09:30",
+      "tag": "regis",
+      "priority": "Medium",
+      "owner": "",
+      "notes": "",
+      "end": ""
+    },
+    {
+      "id": "910429e4",
+      "group": "0ccbabdc",
+      "name": "Aegis bowl",
+      "status": "Not Started",
+      "date": "2026-07-30",
+      "time": "07:30",
+      "tag": "5star",
+      "priority": "Medium",
+      "owner": "",
+      "notes": ""
+    },
+    {
+      "id": "6bee285f",
+      "group": "0ccbabdc",
+      "name": "Sail GP",
+      "status": "Not Started",
+      "date": "2026-07-31",
+      "time": "09:00",
+      "tag": "5star",
+      "priority": "Medium",
+      "owner": "",
+      "notes": ""
+    },
+    {
+      "id": "2c0d0afc",
+      "group": "526d5c1f",
+      "name": "Sales training",
+      "status": "Not Started",
+      "date": "2026-08-04",
+      "time": "10:00",
+      "tag": "regis",
+      "priority": "Medium",
+      "owner": "",
+      "notes": ""
+    },
+    {
+      "id": "b540f366",
+      "group": "0ccbabdc",
+      "name": "Sales training",
+      "status": "Not Started",
+      "date": "2026-07-30",
+      "time": "13:00",
+      "tag": "regis",
+      "priority": "Medium",
+      "owner": "",
+      "notes": ""
+    },
+    {
+      "id": "ad0da7c9",
+      "group": "0ccbabdc",
+      "name": "Evacheck checkin & breakfast",
+      "status": "Not Started",
+      "date": "2026-08-06",
+      "time": "09:30",
+      "end": "",
+      "tag": "regis",
+      "priority": "Medium",
+      "owner": "",
+      "notes": ""
+    }
+  ],
+  "settings": {
+    "reminder_lead_min": 10,
+    "digest_time": "08:00",
+    "ntfy_enabled": true,
+    "ntfy_server": "https://ntfy.sh",
+    "timezone": "Europe/London",
+    "cloud_reminders": true,
+    "cloud_app_url": "https://tinker-calendar.pages.dev/"
+  },
+  "deleted": {
+    "phonetst": "2026-08-06T16:18:22Z"
+  }
+}

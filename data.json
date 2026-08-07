@@ -112,20 +112,6 @@
       "priority": "Medium",
       "owner": "",
       "notes": ""
-    },
-    {
-      "id": "phonetst",
-      "group": "0ccbabdc",
-      "name": "Phone sync test (auto-removed)",
-      "status": "Done",
-      "date": "2026-08-06",
-      "time": "",
-      "end": "",
-      "tag": "",
-      "priority": "Low",
-      "owner": "",
-      "notes": "written via the phone app's API path",
-      "updated": "2026-08-07T09:15:21Z"
     }
   ],
   "settings": {

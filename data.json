@@ -57,26 +57,27 @@
       "id": "910429e4",
       "group": "0ccbabdc",
       "name": "Aegis bowl",
-      "status": "Working on it",
+      "status": "Done",
       "date": "2026-07-30",
       "time": "07:30",
       "tag": "5star",
       "priority": "Medium",
       "owner": "",
       "notes": "",
-      "updated": "2026-08-07T09:42:41Z"
+      "updated": "2026-08-07T09:42:43Z"
     },
     {
       "id": "6bee285f",
       "group": "0ccbabdc",
       "name": "Sail GP",
-      "status": "Not Started",
+      "status": "Done",
       "date": "2026-07-31",
       "time": "09:00",
       "tag": "5star",
       "priority": "Medium",
       "owner": "",
-      "notes": ""
+      "notes": "",
+      "updated": "2026-08-07T09:42:48Z"
     },
     {
       "id": "2c0d0afc",
@@ -94,32 +95,34 @@
       "id": "b540f366",
       "group": "0ccbabdc",
       "name": "Sales training",
-      "status": "Not Started",
+      "status": "Done",
       "date": "2026-07-30",
       "time": "13:00",
       "tag": "regis",
       "priority": "Medium",
       "owner": "",
-      "notes": ""
+      "notes": "",
+      "updated": "2026-08-07T09:42:46Z"
     },
     {
       "id": "ad0da7c9",
       "group": "0ccbabdc",
       "name": "Evacheck checkin & breakfast",
-      "status": "Not Started",
+      "status": "Done",
       "date": "2026-08-06",
       "time": "09:30",
       "end": "",
       "tag": "regis",
       "priority": "Medium",
       "owner": "",
-      "notes": ""
+      "notes": "",
+      "updated": "2026-08-07T09:42:51Z"
     },
     {
       "id": "81573894",
       "group": "0ccbabdc",
       "name": "test",
-      "status": "Not Started",
+      "status": "Working on it",
       "date": "2026-08-07",
       "time": "11:00",
       "end": "",
@@ -127,7 +130,7 @@
       "priority": "Medium",
       "owner": "",
       "notes": "",
-      "updated": "2026-08-07T09:39:44Z"
+      "updated": "2026-08-07T09:42:53Z"
     }
   ],
   "settings": {

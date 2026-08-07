@@ -1,0 +1,36 @@
+name: Schedule reminders
+
+on:
+  schedule:
+    - cron: "0 3,15 * * *"   # twice daily; 36h horizon in scheduler.py overlaps safely
+  push:
+    paths: ["data.json"]
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reminders
+  cancel-in-progress: false
+
+jobs:
+  schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Schedule ntfy pushes
+        run: python scheduler.py
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+      - name: Commit registry
+        run: |
+          git config user.name "tinker-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add registry.json
+          git diff --cached --quiet || git commit -m "update reminder registry"
+          git push

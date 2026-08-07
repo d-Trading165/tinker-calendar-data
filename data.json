@@ -112,20 +112,6 @@
       "priority": "Medium",
       "owner": "",
       "notes": ""
-    },
-    {
-      "id": "17eec3b9",
-      "group": "0ccbabdc",
-      "name": "Desktop race test",
-      "status": "Done",
-      "date": "2026-08-07",
-      "time": "",
-      "end": "",
-      "tag": "",
-      "priority": "Medium",
-      "owner": "",
-      "notes": "",
-      "updated": "2026-08-07T09:21:55Z"
     }
   ],
   "settings": {
@@ -139,6 +125,7 @@
   },
   "deleted": {
     "phonetst": "2026-08-06T16:18:22Z",
-    "cloudchk1": "2026-08-07T09:22:44Z"
+    "cloudchk1": "2026-08-07T09:22:44Z",
+    "17eec3b9": "2026-08-07T09:22:46Z"
   }
 }

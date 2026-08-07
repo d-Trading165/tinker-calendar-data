@@ -43,26 +43,28 @@
       "id": "094984eb",
       "group": "0ccbabdc",
       "name": "Website & command deck",
-      "status": "Working on it",
+      "status": "Done",
       "date": "2026-07-29",
       "time": "09:30",
       "tag": "regis",
       "priority": "Medium",
       "owner": "",
       "notes": "",
-      "end": ""
+      "end": "",
+      "updated": "2026-08-07T09:42:40Z"
     },
     {
       "id": "910429e4",
       "group": "0ccbabdc",
       "name": "Aegis bowl",
-      "status": "Not Started",
+      "status": "Working on it",
       "date": "2026-07-30",
       "time": "07:30",
       "tag": "5star",
       "priority": "Medium",
       "owner": "",
-      "notes": ""
+      "notes": "",
+      "updated": "2026-08-07T09:42:41Z"
     },
     {
       "id": "6bee285f",

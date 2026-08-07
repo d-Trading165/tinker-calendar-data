@@ -126,6 +126,20 @@
       "owner": "",
       "notes": "written via the phone app's API path",
       "updated": "2026-08-07T09:20:23Z"
+    },
+    {
+      "id": "17eec3b9",
+      "group": "0ccbabdc",
+      "name": "Desktop race test",
+      "status": "Done",
+      "date": "2026-08-07",
+      "time": "",
+      "end": "",
+      "tag": "",
+      "priority": "Medium",
+      "owner": "",
+      "notes": "",
+      "updated": "2026-08-07T09:21:55Z"
     }
   ],
   "settings": {

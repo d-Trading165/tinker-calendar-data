@@ -27,6 +27,28 @@ def fmt_time(t):
     return t[1:] if t.startswith("0") else t
 
 
+def eff_items(items, today):
+    """Weekly-repeating items whose date has passed are projected onto their
+    next occurrence (same weekday, ≥ today), status reset — mirrors the
+    desktop's roll-forward, but without writing anything back. This keeps
+    reminders firing even when no device has run for weeks."""
+    out = []
+    for it in items:
+        d = it.get("date") or ""
+        if (it.get("repeat") or "") == "weekly" and d:
+            try:
+                dd = datetime.strptime(d, "%Y-%m-%d").date()
+            except ValueError:
+                out.append(it)
+                continue
+            if dd < today:
+                weeks = ((today - dd).days + 6) // 7
+                it = dict(it, date=(dd + timedelta(days=weeks * 7)).isoformat(),
+                          status="Not Started")   # Done last week ≠ done this week
+        out.append(it)
+    return out
+
+
 def post(server, topic, title, body, at_ts, click=None):
     payload = {"topic": topic, "title": title, "message": body,
                "tags": ["calendar"], "delay": str(at_ts)}
@@ -114,6 +136,7 @@ def main():
         return
     tz = ZoneInfo(s.get("timezone") or "UTC")
     now = datetime.now(tz)
+    data["items"] = eff_items(data.get("items", []), now.date())
     lead = timedelta(minutes=int(s.get("reminder_lead_min") or 10))
     server = s.get("ntfy_server") or "https://ntfy.sh"
     # taps open the cloud phone app (works with the PC off); fall back to the
